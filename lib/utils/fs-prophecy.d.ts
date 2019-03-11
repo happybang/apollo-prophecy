@@ -1,4 +1,3 @@
-/// <reference types="@types/node" />
 import * as fs from 'fs';
 import * as jsonfile from 'jsonfile';
 import { JsonInputErrorEntry } from '../types';

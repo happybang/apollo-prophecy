@@ -3,7 +3,7 @@ import  {
   ApolloError,
   toApolloError,
   gql,
-} from 'apollo-server';
+} from 'apollo-server-koa';
 
 export const PropheticErrorTextDef = `class PropheticError extends ApolloError {
   constructor(name: string, message: string, code?: string, properties?: Record<string, any>) {

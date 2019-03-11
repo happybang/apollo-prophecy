@@ -86,7 +86,7 @@ export default function (entries: JsonInputErrorEntryRecord) {
   const errorsList = toOutputErrors(entries);
 
   const classFile = `
-  import { ApolloError } from 'apollo-server'
+  import { ApolloError } from 'apollo-server-koa'
 
   export const errorsList = ${JSON.stringify(errorsList, null, 2)};
   export const errorType = \`${rawPropheticErrorAndExtensionsType}\`;
