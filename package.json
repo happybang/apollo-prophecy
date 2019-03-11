@@ -14,7 +14,7 @@
     "preversion": "npm test",
     "version": "npm run build && git add -A lib",
     "postversion": "git push && git push --tags && rm -rf lib",
-    "patch-release": "npm version patch && cnpm publish && git push --follow-tags",
+    "patch-release": "npm run version && npm version patch && cnpm publish && git push --follow-tags",
     "prepatch-release": "npm version prepatch && cnpm publish && git push --follow-tags"
   },
   "repository": {
