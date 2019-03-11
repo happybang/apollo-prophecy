@@ -1,5 +1,5 @@
 {
-  "name": "apollo-prophecy",
+  "name": "@mfelibs/apollo-prophecy",
   "version": "0.2.4-0",
   "description": "Generate Spec compliant and shareable errors for Apollo Client/Server from JSON or Graphql Schema",
   "main": "./lib/index.js",
@@ -14,8 +14,8 @@
     "preversion": "npm test",
     "version": "npm run build && git add -A lib",
     "postversion": "git push && git push --tags && rm -rf lib",
-    "patch-release": "npm version patch && npm publish && git push --follow-tags",
-    "prepatch-release": "npm version prepatch && npm publish && git push --follow-tags"
+    "patch-release": "npm version patch && cnpm publish && git push --follow-tags",
+    "prepatch-release": "npm version prepatch && cnpm publish && git push --follow-tags"
   },
   "repository": {
     "type": "git",
